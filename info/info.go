@@ -149,5 +149,7 @@ func (s *info) cpus() error {
 func init() {
 	if i, err := New(); err == nil {
 		Info = i
+	} else {
+		Info = new(machine.Machine)
 	}
 }
