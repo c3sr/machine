@@ -1,0 +1,39 @@
+syntax = "proto3";
+package protobuf;
+option go_package = "machine";
+
+message Machine {
+  string Hostname = 1;
+  string KernelOS = 2;
+  string KernelVersion = 3;
+  string KernelArch = 4;
+  string KernelType = 5;
+  string KernelCompileDate = 6;
+  string OSName = 7;
+  string OSID = 8;
+  string OSIDLike = 9;
+  string OSVersion = 10;
+  uint64 MemTotal = 11;
+  uint64 SwapTotal = 12;
+  repeated string NetDev = 13;
+  int32 Sockets = 14;
+  repeated CPU CPU = 15;
+}
+
+message CPU {
+  int32 PhysicalID = 1;
+  int32 CoreID = 2;
+  int32 Siblings = 3;
+  string VendorID = 4;
+  string CPUFamily = 5;
+  string Model = 6;
+  string ModelName = 7;
+  string Stepping = 8;
+  string Microcode = 9;
+  float CPUMHz = 10;
+  float BogoMIPS = 11;
+  string CacheSize = 12;
+  int32 CPUCores = 13;
+  repeated string Flags = 14;
+  repeated string Bugs = 15;
+}
