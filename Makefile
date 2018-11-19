@@ -3,12 +3,6 @@ all: generate
 fmt:
 	go fmt ./...
 
-glide-install:
-	glide install --force
-
-logrus-fix:
-	rm -fr vendor/github.com/Sirupsen
-	find vendor -type f -exec sed -i 's/Sirupsen/sirupsen/g' {} +
 
 generate: generate-proto
 
@@ -21,6 +15,6 @@ clean-proto:
 
 clean: clean-models
 
-travis: install-deps glide-install logrus-fix generate
+travis: generate
 	echo "building..."
 	go build
