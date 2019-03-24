@@ -1,7 +1,9 @@
 package osinfo
 
-
-import "os/exec"
+import (
+	"os/exec"
+	"strings"
+)
 
 func localOSVersion() string {
 	command := exec.Command("uname", "-r")
@@ -9,5 +11,5 @@ func localOSVersion() string {
 	if err != nil {
 		return ""
 	}
-	return string(output)
+	return strings.Trim(string(output))
 }
