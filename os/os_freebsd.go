@@ -11,5 +11,5 @@ func localOSVersion() string {
 	if err != nil {
 		return ""
 	}
-	return strings.Trim(string(output))
+	return strings.TrimSpace(string(output))
 }

@@ -1,6 +1,9 @@
 package osinfo
 
-import "os/exec"
+import (
+	"os/exec"
+	"strings"
+)
 
 func localOSVersion() string {
 	command := exec.Command("bash", "-c", `cat /etc/os-release | grep 'VERSION=' | cut -d'=' -f2`)
@@ -8,5 +11,5 @@ func localOSVersion() string {
 	if err != nil {
 		return ""
 	}
-	return string(output)
+	return strings.TrimSpace(string(output))
 }
