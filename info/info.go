@@ -6,11 +6,11 @@ import (
 	"github.com/pkg/errors"
 	"github.com/rai-project/machine"
 
-	"github.com/mohae/joefriday/cpu/cpuinfo"
-	"github.com/mohae/joefriday/mem/membasic"
-	"github.com/mohae/joefriday/net/netdev"
-	sysos "github.com/mohae/joefriday/system/os"
-	"github.com/mohae/joefriday/system/version"
+	"github.com/rai-project/joefriday/cpu/cpuinfo"
+	"github.com/rai-project/joefriday/mem/membasic"
+	"github.com/rai-project/joefriday/net/netdev"
+	sysos "github.com/rai-project/joefriday/system/os"
+	"github.com/rai-project/joefriday/system/version"
 )
 
 type info struct {

@@ -31,7 +31,7 @@
 
 [[constraint]]
   branch = "master"
-  name = "github.com/mohae/joefriday"
+  name = "github.com/rai-project/joefriday"
 
 [[constraint]]
   name = "github.com/pkg/errors"

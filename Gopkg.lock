@@ -147,6 +147,14 @@
   version = "v2.3.0"
 
 [[projects]]
+  digest = "1:31e761d97c76151dde79e9d28964a812c46efc5baee4085b86f68f0c654450de"
+  name = "github.com/konsorten/go-windows-terminal-sequences"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "f55edac94c9bbba5d6182a4be46d86a2c9b5b50e"
+  version = "v1.0.2"
+
+[[projects]]
   digest = "1:c568d7727aa262c32bdf8a3f7db83614f7af0ed661474b24588de635c20024c7"
   name = "github.com/magiconair/properties"
   packages = ["."]
@@ -275,12 +283,12 @@
   revision = "1b2055ebed224c84d28b34112454ba8b7cc4d491"
 
 [[projects]]
-  digest = "1:9e9193aa51197513b3abcb108970d831fbcf40ef96aa845c4f03276e1fa316d2"
+  digest = "1:fd61cf4ae1953d55df708acb6b91492d538f49c305b364a014049914495db426"
   name = "github.com/sirupsen/logrus"
   packages = ["."]
   pruneopts = "UT"
-  revision = "c155da19408a8799da419ed3eeb0cb5db0ad5dbc"
-  version = "v1.0.5"
+  revision = "8bdbc7bcc01dcbb8ec23dc8a28e332258d25251f"
+  version = "v1.4.1"
 
 [[projects]]
   digest = "1:bd1ae00087d17c5a748660b8e89e1043e1e5479d0fea743352cda2f8dd8c4f84"
@@ -360,7 +368,7 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:f6abf1c508a7dd3c557eca09bdb8c12724611635fb6cf65531c78f52022bfae0"
+  digest = "1:be185606110dea49726de56f64a973bb7ed5b3a7d7660c38d1cc3856d09914bc"
   name = "golang.org/x/crypto"
   packages = [
     "cast5",
@@ -370,19 +378,15 @@
     "openpgp/errors",
     "openpgp/packet",
     "openpgp/s2k",
-    "ssh/terminal",
   ]
   pruneopts = "UT"
   revision = "a49355c7e3f8fe157a85be2f77e6e269a0f89602"
 
 [[projects]]
   branch = "master"
-  digest = "1:c1fee1a2c739c7b220dc3de939f659dce271fa8d9de155cb8cfcfb99c941cbc3"
+  digest = "1:38838aa959fb66911fa66b3409d70a8dc17b45326259f3c792496d5ee2fdbef8"
   name = "golang.org/x/sys"
-  packages = [
-    "unix",
-    "windows",
-  ]
+  packages = ["unix"]
   pruneopts = "UT"
   revision = "ad87a3a340fa7f3bed189293fbfa7a9b7e021ae1"
 
