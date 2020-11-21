@@ -4,13 +4,13 @@ import (
 	"os"
 
 	"github.com/pkg/errors"
-	"github.com/rai-project/machine"
+	"github.com/c3sr/machine"
 
-	"github.com/rai-project/joefriday/cpu/cpuinfo"
-	"github.com/rai-project/joefriday/mem/membasic"
-	"github.com/rai-project/joefriday/net/netdev"
-	sysos "github.com/rai-project/joefriday/system/os"
-	"github.com/rai-project/joefriday/system/version"
+	"github.com/c3sr/joefriday/cpu/cpuinfo"
+	"github.com/c3sr/joefriday/mem/membasic"
+	"github.com/c3sr/joefriday/net/netdev"
+	sysos "github.com/c3sr/joefriday/system/os"
+	"github.com/c3sr/joefriday/system/version"
 )
 
 type info struct {
